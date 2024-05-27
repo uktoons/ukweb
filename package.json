@@ -7,11 +7,11 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mongodb": "^3.6.3",
     "handlebars": "^4.7.8",
     "handlebars-cli": "^0.1.2",
     "hbs": "^4.2.0",
     "i": "^0.3.7",
+    "mongodb": "^3.6.3",
     "mongoose": "^8.4.0",
     "nodemon": "^3.1.1"
   },
