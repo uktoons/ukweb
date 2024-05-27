@@ -31,3 +31,4 @@ const LogInSchema = new mongoose.Schema({
 const User = mongoose.model("User", LogInSchema);
 
 module.exports = { connectDB, User };
+console.log(process.env.MONGO_URI);
