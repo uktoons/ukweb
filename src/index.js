@@ -19,15 +19,15 @@ connectDB();
 
 // Define routes
 app.get("/", (req, res) => {
-    res.render("login");
+    res.render("/login");
 });
 
 app.get('/login', (req, res) => {
-    res.render('login');
+    res.render('/login');
 });
 
 app.get("/signup", (req, res) => {
-    res.render("signup");
+    res.render("/signup");
 });
 
 app.post("/signup", async (req, res) => {
@@ -51,7 +51,7 @@ app.post("/login", async (req, res) => {
         // Find user by name in MongoDB
         const user = await User.findOne({ name: req.body.name });
         if (user && user.password === req.body.password) {
-            res.render("home"); // Redirect to home page after login
+            res.render("/home"); // Redirect to home page after login
         } else {
             res.send("Wrong username or password.");
         }
